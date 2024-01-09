@@ -21,12 +21,6 @@ class StickerSet(db.Model):
         return f'StickerSet: {self.name}'
 
 
-
-@app.route('/')
-def hello():
-    return 'Henlo stinky'
-
-
 #add entry
 @app.route('/saved', methods = ['POST'])
 def add_sticker_set():
